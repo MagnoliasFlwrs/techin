@@ -1,0 +1,102 @@
+.hero-block {
+    height: 100vh;
+    background: linear-gradient(90deg, #FFFFFF 50% , rgba(30, 35, 39, 1) 50%);
+    margin-top: -145px;
+    padding-top: 145px;
+}
+.hero-block .content  {
+    position: relative;
+}
+.techin-hero {
+    width: 100%;
+    height: calc(100vh - 145px);
+    background-image: url(../images/main-page/hero-img.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.techin-hero h1 {
+    max-width: 50%;
+    font-size: 80px;
+    line-height: 97.4%;
+    font-weight: 700;
+    color: var(--main-dark-color);
+    font-style: normal;
+    position: absolute;
+    left: 30px;
+    bottom: 107px;
+}
+.techin-hero h1.brandcolor-text {
+    font-family: Ubuntu;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.4%;
+}
+.techin-hero-mobile-block1 {
+    /* background-color: var(--white-color); */
+    /* background-image: url(../images/main-page/hero-mobile-1.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 385px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.techin-hero-mobile-block1 h1 , .techin-hero-mobile-block2 p {
+    text-align: right;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 97.4%;
+    padding-bottom: 30px;
+}
+.techin-hero-mobile-block2 p {
+    text-align: left;
+    padding-bottom: 20px;
+}
+.techin-hero-mobile-block2 {
+    height: calc(100vh - 385px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: var(--white-color);
+
+}
+.techin-hero-mobile {
+    background-image: url(../images/main-page/hero-mobile.png);
+    background-position: bottom    left;
+    background-repeat: no-repeat;
+    background-size:100% 90%;
+    height: calc(100vh - 107px);
+    display: none;
+}
+@media (max-width:1300px) {
+    .techin-hero h1 {
+        font-size: 70px;
+    }
+}
+@media (max-width:1024px) {
+    .techin-hero h1 {
+        font-size: 55px;
+    }
+}
+@media (max-width:768px) {
+    .techin-hero-mobile  {
+        display: block;
+    }
+    .techin-hero  {
+        display: none;
+    }
+    .hero-block {
+        margin-top: -107px;
+        padding-top: 107px;
+        padding-top: 0;
+        height: 100vh;
+        background: #ffffff;
+        background: linear-gradient(180deg, #FFFFFF 50% , rgba(30, 35, 39, 1) 50%);
+    }
+}

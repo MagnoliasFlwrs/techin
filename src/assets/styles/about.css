@@ -1,0 +1,108 @@
+.about {
+    padding: 150px 0;
+    background-color: var(--main-dark-color);
+}
+.about-inner {
+    display: flex;
+    gap: 50px;
+    color: var(--white-color);
+}
+.about-inner:not(:last-child) {
+    margin-bottom: 300px;
+}
+.about-inner-img {
+    width: calc((100% - 50px) / 2);
+    padding-right: 24px;
+    border-right: 1px solid #F0F0F0;
+}
+
+.about-inner-img-left {
+    padding: 0;
+    border: none;
+    padding-left: 24px;
+    border-left: 1px solid #F0F0F0;
+}
+.about-inner-img-left h2 {
+    text-align: left;
+    font-family: "Ubuntu";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 100px;
+}
+.about-inner-img h2 {
+    font-family: "Ubuntu";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+.about-inner-info {
+    width: calc((100% - 50px) / 2);
+}
+.about-inner-info p {
+    font-family: "Ubuntu";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+.about-inner-info .about-inner-info-left {
+    text-align: right;
+}
+@media (max-width:1024px) {
+    .about {
+        padding: 0;
+    }
+    .about-inner {
+        flex-direction: column;
+        padding: 75px 0;
+        border-bottom: 1px solid #485661;
+    }
+    .about-inner:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    .about-inner-img , .about-inner-info , .about-inner-img-left{
+        width: 100%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-inner-img h2 , .about-inner-img-left h2{
+        color: #FFF;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .about-inner-info p {
+        color: #FFF;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .about-inner-img  img , .about-inner-img-left img {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+        margin: 0 0 0 auto;
+    }
+    .about-inner:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .about-inner-info .about-inner-info-left  {
+        text-align: center;
+    }
+}

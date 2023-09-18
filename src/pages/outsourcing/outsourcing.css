@@ -1,0 +1,143 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+.outsourcing-hero {
+    padding: 150px 0;
+    background-image: url(../../assets/images/outsourcing/outsourcing1.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+}
+.outsourcing-hero-block {
+    max-width: 570px;
+}
+.outsourcing-hero-block-mob {
+    background-image: url(../../assets/images/outsourcing/outsourcing1.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 379px;
+    display: none;
+}
+.outsourcing-hero-block p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin: 100px 0;
+}
+.section-1 {
+    padding: 150px 0;
+    background-image: url(../../assets/images/outsourcing/outsourcing3.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+}
+.section-1-row-p {
+    padding-bottom: 150px;
+}
+.section-1-row p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-1-row .dark-btn {
+    margin-top: 50px;
+}
+.section-1-mob-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.section-2 {
+    padding: 150px 0;
+}
+.section-2-p{
+    padding: 0;
+}
+.section-2 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-3 {
+    height: 600px;
+    background-image: url(../../assets/images/outsourcing/outsourcing2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:1024px) {
+    .outsourcing-hero {
+        background-color: #140F16;
+        background-image: none;
+        padding: 0;
+    }
+    .outsourcing-hero-block-mob  {
+        display: block;
+    }
+    .outsourcing-hero-block {
+        max-width: 100%;
+        width: 100%;
+        padding: 75px 0;
+    }
+    .outsourcing-hero-block p  {
+        margin: 50px 0;
+        text-align: center;
+    }
+    .outsourcing-hero-block h1 {
+        text-align: center;
+    }
+    .outsourcing-hero-block .bordered-btn {
+        margin: 0 auto;
+    }
+    .section-1 {
+        background-image: none;
+        padding: 0;
+    }
+    .section-1-row p {
+        font-size: 20px;
+    }
+    .section-1-row:first-child img {
+        display: block;
+    }
+    .section-1-row:first-child {
+        padding-bottom: 75px;
+    }
+    .section-2 p {
+        font-size: 20px;
+    }
+    .section-3 {
+        height: 430px;
+    }
+    .section-2 {
+    padding: 0 0 75px 0;
+    }
+    .section-2-p{
+        padding: 0;
+    }
+    .section-10 {
+        padding-top: 0;
+    }
+}
+@media (max-width:768px) {
+    .section-1-mob-img {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .section-1-row:first-child {
+        padding-bottom: 0;
+    }
+}

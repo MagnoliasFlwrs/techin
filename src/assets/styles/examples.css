@@ -1,0 +1,208 @@
+.examples {
+    padding: 150px 0 0 ;
+    width: 100%;
+    background-color: var(--light-bg-color);
+}
+.example-card {
+    padding: 50px;
+    border: 1px solid #E9EDF0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #FBFBFC;
+    /* max-height: 594px; */
+}
+.example-card-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.client-status {
+    padding: 10px;
+    border: 1px solid #ECF0F2;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.client-status p {
+    color: var(--main-dark-color);
+    font-family: "Ubuntu";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+
+}
+.project-status span {
+    color: #BFBFBF;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1%;
+}
+.example-card-title {
+    color: var(--main-dark-color);
+    font-family: "Ubuntu";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.example-card-subtitle {
+    color: #8EA5B7;
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.btn-more {
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #E9EDF0;
+    margin-right: auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.btn-more p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97.4%;
+    text-transform: uppercase;
+    transition: all 0.3 ease;
+    width: 0px;
+    visibility: hidden;
+    color: var(--main-dark-color);
+}
+.btn-more:hover p {
+    width: auto;
+    visibility: visible;
+    margin-right: 10px;
+}
+.arrows-inner {
+    padding: 100px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+.custom-swiper-button-prev , .custom-swiper-button-next {
+    cursor: pointer;
+}
+
+.arrows-inner p {
+    color: var(--main-dark-color);
+    font-family: "Ubuntu";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97.4%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.examples-analitics {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.examples-analitics-info {
+    display: flex;
+    gap: 50px;
+}
+.examples-analitics-info p {
+    color: var(--main-dark-color);
+    font-family: "Ubuntu";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 464px;
+}
+.examples-analitics-info p:first-child {
+    font-size: 200px;
+    line-height: 86.4%;
+    max-width: 84px;
+}
+.swiper-button-disabled {
+    opacity: 0.5;
+}
+.examples-swiper {
+    padding-bottom: 50px !important;
+}
+.examples-swiper .swiper-pagination {
+    bottom: 0;
+    display: none;
+}
+.examples-swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 32px;
+    height: 3px;
+    border-radius: 50px;
+    background: #949494;
+}
+.examples-swiper .swiper-pagination .swiper-pagination-bullet-active {
+    border-radius: 50px;
+    background: #1E2327;
+}
+.examples-btn {
+    display: none;
+}
+
+
+@media (max-width:1024px) {
+    .examples-analitics-info p {
+        font-size: 40px;
+    }
+    .examples-analitics-info p:first-child {
+        font-size: 100px;
+    }
+    .examples {
+        padding: 0  ;
+    }
+    .example-card {
+        /* height: 561px; */
+    }
+    .example-card-head {
+        gap: 10px;
+    }
+    .example-card {
+        padding: 25px;
+    }
+    .example-card img:nth-child(2) {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .example-card-title {
+        text-align: center;
+        font-size: 25px;
+    }
+    .examples-swiper .swiper-pagination {
+        display: block;
+    }
+    .examples-swiper .arrows-inner {
+        display: none;
+    }
+    .examples-btn {
+        display: block;
+        margin: 75px auto 50px;
+    }
+    .examples-analitics-info {
+        gap: 20px;
+    }
+}
+@media (max-width:768px) {
+    .examples-analitics {
+        flex-direction: column-reverse;
+    }
+    .examples-analitics img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+

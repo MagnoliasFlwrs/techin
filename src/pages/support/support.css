@@ -1,0 +1,204 @@
+@import url(../../assets/styles/fonts.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/rubrica.css);
+@import url(../../assets/styles/contact-us.css);
+@import url(../../assets/styles/helper.css);
+@import url(../../assets/styles/examples.css);
+@import url(../../assets/styles/technology.css);
+@import url(../../assets/styles/footer.css);
+
+.support-hero {
+    padding: 150px 0;
+    background-color: var(--light-bg-color);
+    background-image: url(../../assets/images/support/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.support-hero-block {
+    max-width: calc((100% - 100px)/2);
+    width: 100%;
+}
+.support-hero-block h3 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+.support-hero-block p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-top: 100px;
+}
+.support-hero img {
+    display: none;
+}
+.section-1 {
+    padding-top: 150px;
+}
+.section-1 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-9-bg {
+    background-image: url(../../assets/images/support/image.png);
+    background-position: left bottom 100px;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+}
+.section-9-bg .section-9-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+.section-1-p {
+    padding-top: 0;
+    padding-bottom: 150px;
+}
+.section-1-lbg {
+    background-color: var(--light-bg-color);
+}
+.section-2 {
+    padding: 150px 0;
+    background-color: var(--light-bg-color);
+}
+.section-2-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.section-2-card {
+    max-width: 413px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.section-2-card  p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-9-lbg  {
+    background-image: url(../../assets/images/support/bitrix.png);
+    background-repeat: no-repeat;
+    background-position: left bottom 100px;
+    padding-top: 0;
+    background-color: var(--light-bg-color);
+}
+.section-9-lbg .section-9-block1 img {
+    display: none;
+}
+.section-9-lbg .dop-contact .social {
+    margin-bottom: 0;
+}
+.section-9-lbg .dop-contact {
+    gap: 50px;
+    max-width: 350px;
+}
+.section-9-lbg .dop-contact span {
+    color: #BFBFBF;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-1-dark {
+    background-color: #030B16;
+    color: var(--white-color);
+}
+.section-10-deep-dark {
+    background-color: #030B16;
+    background-image: url(../../assets/images/support/server.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: var(--white-color);
+    padding-bottom: 150px;
+}
+.section-10-deep-dark .section-10-deep-dark-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+@media (max-width:1600px) {
+    .support-hero , .section-10-deep-dark {
+        background-size: 70% auto;
+    }
+}
+@media (max-width:1024px) {
+    .support-hero {
+        padding: 75px 0 0;
+        background-image: none;
+        text-align: center;
+    }
+    .support-hero-block {
+        max-width: 100%;
+        width: 100%;
+    }
+    .support-hero-block h3 {
+        font-size: 30px;
+    }
+    .support-hero-block p {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .support-hero img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .section-1 {
+        padding-top: 0px;
+        text-align: center;
+    }
+    .section-1 p {
+        font-size: 20px;
+    }
+    .section-9-bg {
+        background-image: none;
+    }
+    .section-9-bg .section-9-bg-img  {
+        display: block;
+    }
+    .section-1-p {
+        padding-top: 0;
+        padding-bottom: 75px;
+    }
+    .section-2 {
+        padding: 75px 0;
+    }
+    .section-2-cards {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section-2-card {
+        gap: 50px;
+    }
+    .section-9-lbg  {
+        background-image: none;
+    }
+    .section-9-lbg .section-9-block1 img {
+        display: block;
+    }
+    .section-10-deep-dark .section-10-block1 h2 {
+        font-size: 30px;
+    }
+    .section-10-deep-dark {
+        background-image: none;
+        padding-bottom: 0;
+    }
+    .section-10-deep-dark .section-10-deep-dark-img {
+        display: block;
+    }
+}

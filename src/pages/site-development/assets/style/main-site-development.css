@@ -1,0 +1,403 @@
+@import url(../../../../assets/styles/fonts.css);
+@import url(../../../../assets/styles/swiper-bundle.min.css);
+@import url(../../../../assets/styles/helper.css);
+@import url(../../../../assets/styles/header.css);
+@import url(../../../../assets/styles/rubrica.css);
+@import url(../../../../assets/styles/contact-us.css);
+@import url(../../../../assets/styles/examples.css);
+@import url(../../../../assets/styles/technology.css);
+@import url(../../../../assets/styles/footer.css);
+
+
+.site-dev-hero {
+    padding: 100px 0;
+    background-color: var(--main-dark-color);
+    background-image: url(../../../../assets/images/site-development-page/hero-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.site-dev-hero .content {
+    display: flex;
+    justify-content: flex-end;
+}
+.site-dev-hero-content {
+    max-width: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.site-dev-hero-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+.site-dev-hero-content h1 {
+    color: var(--white-color);
+}
+.site-dev-hero-content p{
+    color: var(--white-color);
+    font-family: "Ubuntu";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.site-dev-hero-content h3 {
+    color: #989898;
+    font-family: "Ubuntu";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.stages-block1 {
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.block1-right {
+    max-width: 50%;
+    width: 100%;
+}
+.block1-right h2 {
+    color: var(--main-dark-color);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: right;
+}
+.block1-right-bold {
+    color: var(--main-dark-color);
+    text-align: right;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.block1-left {
+    max-width: 50%;
+    width: 100%;
+}
+.block1-left p {
+    color: var(--main-dark-color);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 50px;
+}
+.stages-block2 {
+    background: linear-gradient(90deg, rgba(30, 35, 39, 1) 50% , #FFFFFF 50% );
+}
+.stages-block2 .content {
+    display: flex;
+}
+.main-stage-descr {
+    max-width: 50%;
+    padding: 100px 150px 100px 0;
+}
+.main-stage-descr p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: left;
+    line-height: 180%;
+    color: var(--white-color);
+
+}
+.main-stages {
+    padding-left: 100px;
+}
+.main-stages p , .section-9-block2 p {
+    color: var(--main-dark-color);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+}
+.main-stages ul , .section-9-block2 ul {
+    margin-top: 50px;
+}
+.main-stages ul li , .section-9-block2 ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.main-stages ul li:last-child , .section-9-block2 ul li:last-child {
+    margin-bottom: 50px;
+}
+.main-stages .stage-num , .section-9-block2 .stage-num  {
+    padding: 0;
+    margin: 0;
+    color: var(--main-dark-color);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 15px 0 5px;
+
+}
+.stage-line {
+    width: 5px;
+    height: 34px;
+    border-radius: 3px;
+    background-color: var(--brand-color);
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.main-stages .stage-descr , .section-9-block2 .stage-descr{
+    color: var(--main-dark-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.comment {
+    padding-top: 150px;
+}
+.comment .content {
+    display: flex;
+    gap: 100px;
+}
+.comment-info {
+    display: flex;
+    gap: 50px;
+}
+.comment-info p {
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 86.4%;
+}
+.info-inner p{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.info-inner p:first-child {
+    margin-bottom: 20px
+}
+
+.order {
+    padding: 150px 0;
+    width: 100%;
+    background-color: var(--main-dark-color);
+}
+.order .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.order h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+    color: #ECF0F2;
+}
+.order p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    color: #ECF0F2;
+    display: flex;
+}
+.order p::before {
+    content: '';
+    /* display: block; */
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: var(--brand-color);
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.section-9 {
+    padding: 150px 0;
+}
+.section-9 .content {
+    display: flex;
+    gap: 100px;
+}
+.section-9-block1 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    text-align: left;
+    margin-bottom: 50px;
+    max-width: 574px;
+}
+.section-9-block2 {
+    max-width: 670px;
+}
+.section-10 {
+    padding: 150px 0 0;
+    width: 100%;
+    background-color: var(--light-bg-color);
+}
+.section-10 .content {
+    display: flex;
+    gap: 100px;
+}
+.section-10-block1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 574px;
+}
+.section-10-block1 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-10-block1 .section-10-bold {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+}
+
+.section-10-block2 h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+}
+.section-10-block2 ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.section-10-block2 ul li {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+}
+.section-10-block2 ul li::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: var(--brand-color);
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+@media (max-width:1200px) {
+    .site-dev-hero-content p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .site-dev-hero-content h1 {
+        text-align: center;
+    }
+    .site-dev-hero-content h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .site-dev-hero-content {
+        max-width: 100%;
+
+    }
+    .site-dev-hero-content img {
+        display: block;
+        text-align: center;
+    }
+    .site-dev-hero {
+        padding: 100px 0 0;
+        background-color: var(--main-dark-color);
+        background-image: url(../../assets/images/site-development-page/gradient.png);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .stages  {
+        padding: 0 ;
+    }
+    .stages .content .stages-block1 {
+        flex-direction: column;
+    }
+    .block1-right , .block1-left , .main-stage-descr , .main-stages {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .block1-right  h2 , .block1-right-bold{
+        font-size: 40px;
+    }
+    .stages-block1  {
+        padding: 0 0 75px;
+    }
+    .stages-block1 h2 , .block1-left p {
+        text-align: center;
+    }
+    .block1-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .stages-block2 {
+        background: #FFFFFF;
+    }
+    .stages-block2 .content {
+        flex-direction: column;
+    }
+    .main-stage-descr {
+        padding: 50px 20px;
+        background-color: var(--main-dark-color);
+    }
+    .main-stage-descr p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .main-stages {
+        padding: 50px 20px;
+    }
+    .comment .content {
+        display: flex;
+        gap: 50px;
+    }
+    .comment {
+        padding: 0;
+    }
+    .comment .content img , .section-9 .section-9-block1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .comment-info p {
+        font-size: 100px;
+    }
+    .info-inner p {
+        font-size: 20px;
+    }
+    .info-inner {
+        margin-bottom: 50px;
+    }
+    .section-9 , .section-10 {
+        padding-top: 0;
+    }
+    .examples {
+        padding-top: 75px;
+    }
+    .section-9-p {
+        padding: 0;
+    }
+
+
+}

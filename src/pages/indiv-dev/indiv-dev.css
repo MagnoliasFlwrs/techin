@@ -1,0 +1,128 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+
+.indiv-hero {
+    padding: 150px 0 400px;
+    background-color: var(--main-dark-color);
+    background-image: url(../../assets/images/indiv-dev/developers.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--white-color);
+}
+.indiv-hero .content {
+    display: flex;
+    gap: 100px;
+}
+.indiv-hero-block p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.section-1 {
+    padding: 0 0 150px;
+    width: 100%;
+    background-color: var(--light-bg-color);
+}
+.section-1 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-3 {
+    margin: 150px 0;
+    background: linear-gradient(90deg, #FFFFFF 50%, rgba(30, 35, 39, 1) 50% );
+}
+.section-3 .content  {
+    display: flex;
+    gap: 100px;
+}
+.section-3-block , .section-3-block-2 {
+    width: calc((100% - 100px) / 2);
+}
+.section-3-block .section-9-block2 {
+    max-width: 100%;
+    width: 100%;
+}
+.section-3-block-2 {
+    padding: 150px 0 150px 100px ;
+}
+.section-3-block-2 p {
+    margin-top: 100px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    color: var(--white-color);
+}
+.comment {
+    padding-top: 0;
+}
+@media (max-width:1024px) {
+    .indiv-hero {
+        padding: 75px 0 150px;
+    }
+    .indiv-hero .content {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .indiv-hero-block h1 {
+        text-align: center;
+    }
+    .indiv-hero-block p , .section-1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-1 {
+        padding: 0 0 50px;
+    }
+    .section-9 , .section-10 , .section-3 {
+        padding-top: 0;
+    }
+    .section-3 {
+        background: var(--white-color);
+        margin: 0;
+        padding: 0;
+    }
+    .section-3 .content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section-3-block , .section-3-block-2 {
+        width: 100%;
+    }
+    .section-3-block-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-3-block-2 {
+        background-color: var(--main-dark-color);
+        padding: 20px;
+    }
+    .section-3-block-2 img {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+    .section-3-block-2 p {
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-3 {
+        padding-bottom: 75px;
+    }
+
+}

@@ -1,0 +1,244 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+.breadcrumbs {
+    padding: 50px 0;
+    background-color: var(--light-bg-color);
+}
+.breadcrumbs .content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.breadcrumbs a {
+    color: var(--main-dark-color);
+}
+.breadcrumbs a p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.contacts-inner {
+    padding: 150px 0;
+}
+.contacts-inner .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.contacts-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contacts-card h2 {
+    font-family: Ubuntu;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.contacts-card .poz {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-top: 50px;
+}
+.contacts-card .spec {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 50px;
+}
+.contacts-card .spec span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.contacts-card a {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--main-dark-color);
+    margin-bottom: 50px;
+}
+.contacts-card a span {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--main-dark-color);
+}
+.telegram {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.telegram p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155.525%;
+}
+.telegram p span {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155.525%; /* 23.329px */
+    text-transform: uppercase;
+}
+.address-inner {
+    background: linear-gradient(90deg,#FFFFFF 50% , rgba(30, 35, 39, 1) 50% );
+    margin-bottom: 150px;
+}
+.address-inner .content {
+    display: flex;
+    gap: 100px;
+}
+.address-inner-block {
+    max-width: calc((100% - 100px)/2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.address-inner-block h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.address-card {
+    display: flex;
+    gap: 20px;
+}
+.address-info h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+}
+.address-info p , .address-info p a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    color: var(--main-dark-color);
+}
+.address-info p span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+}
+.address-card svg {
+    margin-top: 15px;
+}
+.address-inner-block-black {
+    gap: 100px;
+    padding: 100px 0 150px 50px;
+    color: var(--white-color);
+}
+.address-inner-block-black h3 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.address-inner-block-black p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.address-inner-block-black .bordered-btn {
+    margin-top: 0;
+}
+@media (max-width:1024px) {
+    .breadcrumbs .content {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .contacts-inner {
+        padding: 75px 0;
+    }
+    .contacts-card .contacts-img {
+        width: 60%;
+        height: 60%;
+    }
+    .contacts-inner .content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .contacts-card h2 {
+        font-size: 30px;
+    }
+    .contacts-card .poz {
+        font-size: 20px;
+    }
+    .contacts-card a {
+        font-size: 30px;
+    }
+    .contacts-card a span {
+        font-size: 30px;
+    }
+    .telegram {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .address-inner {
+        background: transparent;
+        margin-bottom: 75px;
+    }
+    .address-inner .content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .address-inner-block {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .address-inner-block h2 {
+        font-size: 30px;
+    }
+    .address-card {
+        display: flex;
+        gap: 20px;
+    }
+    .address-info h3 {
+        font-size: 20px;
+    }
+    .address-inner-block-black {
+        background-color: var(--main-dark-color);
+        gap: 50px;
+        padding: 30px 20px;
+        color: var(--white-color);
+    }
+    .address-inner-block-black h3 {
+        font-size: 30px;
+    }
+    .address-inner-block-black p {
+        font-size: 20px;
+    }
+}

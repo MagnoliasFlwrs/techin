@@ -1,0 +1,231 @@
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./helper.css);
+@import url(./hero-block.css);
+@import url(./rubrica.css);
+@import url(./pride.css);
+@import url(./contact-us.css);
+@import url(./technology.css);
+@import url(./examples.css);
+@import url(./about.css);
+@import url(./footer.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-dark-color: #1E2327;
+    --brand-color: #9A2538;
+    --secondary-text-color: #8E969D;
+    --white-color: #ffffff;
+    --light-bg-color : #F5F8FA;
+}
+ul , ol ,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/TTNorms-Regular.ttf") format("truetype"),
+    url("../fonts/TTNorms-Regular.woff") format("woff");
+}
+body {
+    font-family: "Ubuntu" ;
+    color: var(--main-dark-color);
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.content {
+    max-width: calc(1440px + 16px *2);
+    padding: 0 16px ;
+    margin: 0 auto;
+}
+.brandcolor-text {
+    color: var(--brand-color);
+}
+.overlay {
+    background-color:rgba(0,0,0,0.5) ;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    transition: all .15s linear;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 12;
+}
+.overlay.open {
+    visibility: visible;
+    opacity: 1;
+}
+.modal {
+    position: fixed;
+    max-width: 974px;
+    width: 100%;
+    padding-bottom: 100px;
+    z-index: 15;
+    background-color: var(--white-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.modal.open-modal {
+    display: block;
+}
+.modal-close {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.close-inner {
+    padding: 20px;
+    cursor: pointer;
+}
+.modal-content {
+    padding: 46px 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.modal-content h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97.4%; /* 19.48px */
+    text-transform: uppercase;
+}
+.modal-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.modal-row input{
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 40px;
+}
+.modal-row input::placeholder {
+    color: #BFBFBF;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97.4%;
+}
+.modal-row:last-child {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+.modal-row:last-child input{
+    width: auto;
+}
+.modal-row .custom-checkbox span {
+    font-size: 15px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+}
+.modal-row label a {
+    color: #1E2327;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox .checkbox {
+    margin-right: 10px;
+}
+
+.custom-checkbox input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+.checkbox {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--main-dark-color);
+}
+.custom-checkbox span {
+    color: #1E2327;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    display: none;
+}
+.custom-checkbox input:checked ~ .checkbox .checkmark {
+    display: block;
+}
+.custom-checkbox input:checked ~ .checkbox {
+    background: var(--brand-color);
+    border: 1px solid var(--brand-color);
+}
+
+@media (max-width:1024px) {
+    .content {
+        max-width: calc(1440px + 30px *2);
+        padding: 0 30px ;
+        margin: 0 auto;
+    }
+}
+@media (max-width:768px) {
+    .modal {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding-bottom: 50px;
+        transform: none;
+    }
+    .modal-content {
+        padding: 46px 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .modal-row {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .modal-row input::placeholder , .modal-content h2 {
+        text-align: center;
+    }
+}

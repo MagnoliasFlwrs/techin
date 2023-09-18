@@ -1,0 +1,104 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+
+.bitrix24-hero {
+    padding: 150px 0;
+    background-color: #02030A;
+    background-image: url(../../assets/images/bitrix-24/b25.png);
+    background-position: bottom 86px right;
+    background-size: auto 780px;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+
+}
+.bitrix24-hero-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+.bitrix24-hero-content {
+    max-width: calc((100% - 100px )/2);
+    width: 100%;
+}
+.bitrix24-hero p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    padding-top: 100px;
+}
+.section-1 {
+    padding-bottom: 150px;
+}
+.section-1  p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-10-bg-img {
+    background-image: url(../../assets/images/bitrix-24/bis.png);
+    background-position: bottom  left;
+    background-repeat: no-repeat;
+    background-size: auto 1010px;
+}
+.section-10-block1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+@media (max-width:1600px) {
+    .section-10-bg-img {
+        background-position: center  left;
+        background-size: 70% auto;
+    }
+}
+@media (max-width:1024px) {
+    .bitrix24-hero {
+        padding: 75px 0;
+        background-image: none;
+    }
+    .bitrix24-hero h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .bitrix24-hero p , .section-1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-1 {
+        padding-bottom: 75px;
+    }
+    .bitrix24-hero-content img  {
+        display: block;
+        margin: 0 auto;
+    }
+    .section-9 , .section-10 , .comment  {
+        padding-top: 0;
+    }
+    .comment-p {
+        padding: 0;
+    }
+    .section-10-bg-img {
+        background-image: none;
+    }
+    .section-10-block1 img {
+        display: block;
+    }
+    .bitrix24-hero-content {
+        max-width: 100%;
+    }
+    .dop-contact {
+        margin-top: 50px;
+    }
+}

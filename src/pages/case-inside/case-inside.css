@@ -1,0 +1,166 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+.case-inside-hero {
+    padding: 150px 0;
+    background-color: var(--light-bg-color);
+    background-image: url(../../assets/images/case-inside/man.png);
+    background-repeat: no-repeat;
+    background-position: right bottom -50px;
+}
+.case-inside-hero-block {
+    max-width: calc((100% - 100px)/2);
+    width: 100%;
+}
+.case-inside-hero-block h2 {
+    margin-top: 20px;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.case-inside-hero-block p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-top: 100px;
+}
+.case-inside-hero img {
+    width: 50%;
+    height: 50%;
+    margin: 30px auto 0;
+    object-fit: contain;
+    display: none;
+}
+.section-1 {
+    padding: 150px 0;
+}
+.section-1-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-1-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 23%;
+    width: 100%;
+}
+.section-1-card span {
+    color: #474747;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.comment-vs-line {
+    padding-top: 0;
+}
+.comment-line {
+    margin: 50px 0;
+    height: 1px;
+    width: 100%;
+    background-color: #8E969D;
+}
+.comment-info-h .general-info p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 20px;
+}
+.comment-info-h .general-info p:last-child {
+    margin-bottom: 0;
+}
+.comment-info-h .general-info p a {
+    color: #02A9F1;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    text-decoration-line: underline;
+}
+.maket {
+    padding: 150px 0;
+    background-color: var(--light-bg-color);
+}
+.maket .content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.maket .dark-btn {
+    display: inline-block;
+    margin: 150px auto 0 0;
+}
+@media (max-width:1600px) {
+    .case-inside-hero {
+        background-size: 50% auto;
+    }
+}
+@media (max-width:1024px) {
+    .case-inside-hero {
+        background-image: none;
+        padding: 75px 0 0;
+        text-align: center;
+    }
+    .case-inside-hero-block {
+        max-width: 100%;
+        width: 100%;
+    }
+    .case-inside-hero-block h2 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .case-inside-hero-block p {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .case-inside-hero img {
+        display: block;
+    }
+    .section-1-cards {
+        justify-content: center;
+    }
+    .section-1-card {
+        max-width: 45%;
+        width: 100%;
+    }
+    .section-1 {
+        padding: 0 0 75px;
+    }
+    .comment-info-h .general-info p , .comment-info-h .general-info p a{
+        font-size: 20px;
+    }
+    .comment-vs-line {
+        padding-bottom: 75px;
+    }
+    .maket {
+        padding: 0 0 75px;
+    }
+    .maket .dark-btn {
+        display: inline-block;
+        margin: 75px auto 0 0;
+    }
+
+}
+@media (max-width:768px)  {
+    .section-1-card {
+        max-width: 100%;
+        width: 100%;
+    }
+}

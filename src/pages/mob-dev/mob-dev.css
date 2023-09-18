@@ -1,0 +1,172 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+.mob-dev-hero {
+    padding: 150px 0;
+    background-color: #000418;
+    background-image: url(../../assets/images/mob-dev/mobile.png);
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+    position: relative;
+}
+.mob-hero-block {
+    max-width: 50%;
+}
+.mob-dev-hero-wrap {
+    background-image: url(../../assets/images/mob-dev/2609334.png);
+    background-position: right 5% bottom 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+}
+.mob-hero-block p {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-top: 100px;
+}
+.section-9 {
+    position: relative;
+}
+
+.section-9-blue-bg {
+    background-image: url(../../assets/images/mob-dev/bg.png);
+    background-position: left bottom ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-9-blue-bg .section-9-block1 img {
+    max-width: 100%;
+}
+.section-9-contacts .section-9-block1 .social {
+    max-width: 280px;
+    margin-top: 50px;
+}
+.section-9-contacts .section-9-block1 p:first-child {
+    margin-bottom: 100px ;
+}
+.section-9-contacts .section-9-block1  span {
+    color: #BFBFBF;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    display: block;
+    max-width: 280px;
+}
+.section-10-blue  {
+    background-image: url(../../assets/images/mob-dev/Mobile-Mockup-Dark-Mode.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-10-blue .section-10-block2 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.section-10-blue .section-10-block2 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.comment-p  {
+    padding-top: 150px;
+}
+.comment-p .dop-contact , .section-9-contacts .dop-contact , .section-9-contacts .dop-contact .social {
+    max-width: 350px;
+}
+.comment-p .dop-contact button , .section-9-contacts .dop-contact button {
+    width: 100%;
+}
+@media (max-width:1560px) {
+    .section-10-blue  {
+        background-image: url(../../assets/images/mob-dev/Mobile-Mockup-Dark-Mode.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+    }
+}
+@media (max-width:1460px) {
+    .mob-dev-hero-wrap {
+        background-image: url(../../assets/images/mob-dev/2609334.png);
+        background-position: right 1% bottom 15%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: var(--white-color);
+    }
+}
+@media (max-width:1300px) {
+    .mob-dev-hero-wrap {
+        background-image: none;
+    }
+
+    .mob-dev-hero {
+        background-image: url(../../assets/images/mob-dev/mobile.png);
+        background-position: right 90% bottom 90%;
+    }
+}
+@media (max-width:1024px) {
+    .mob-dev-hero {
+        padding: 75px 0;
+    }
+    .mob-dev-hero h1 {
+        text-align: center;
+    }
+    .mob-dev-hero p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .mob-dev-hero .bordered-btn {
+        margin: 50px auto 0;
+    }
+    .mob-hero-block {
+        max-width: 100%;
+    }
+    .section-10-blue .section-10-block2 {
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    .section-10-blue .section-10-block2 p {
+        font-size: 20px;
+    }
+    .section-10-blue  {
+        background-image: none;
+
+    }
+    .comment-p {
+        padding: 75px 0 0;
+    }
+    .section-10 {
+        padding-top: 0;
+    }
+    .dop-contact {
+        max-width: 100%;
+    }
+    .dop-contact .colored-btn {
+        margin: 0 auto;
+    }
+    .section-9-contacts .section-9-block1 .social {
+        max-width: 100%;
+    }
+    .section-9-contacts .section-9-block1 span {
+        max-width: 100%;
+        text-align: center;
+    }
+
+}

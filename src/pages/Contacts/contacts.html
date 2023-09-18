@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contacts.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <div class="overlay "></div>
+    <div class="modal">
+        <div class="modal-close">
+            <div class="close-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#0D0D0D"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="modal-content">
+            <h2>Обратная связь</h2>
+            <div class="modal-row">
+                <input type="text" name="user-name" placeholder="Ваше имя">
+                <input type="email" name="user-email" placeholder="E-mail">
+                <input type="tel" name="user-number" placeholder="Телефон">
+            </div>
+            <div class="modal-row">
+                <input type="text" name="user-comment" placeholder="Текст сообщения">
+            </div>
+            <div class="modal-row">
+                <div class="modal-check-inner">
+                    <label class="custom-checkbox">
+                        <input class="hidden-checkbox" type="checkbox">
+                        <span class="checkbox">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                        </span>
+                        <span>Я согласен на  <a href="#">обработку персональных данных</a></span>
+                    </label>
+                </div>
+
+                <button class="dark-btn" type="submit">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <header class="header white-header">
+        <div class="content">
+            <a class="header-logo" href="/">
+                <img class="decktop-logo" src="../../assets/images/logo.png" alt="logo" width="308" height="91">
+                <img class="mobile-logo" src="../../assets/images/logo-mobile.png" alt="logo" width="229" height="67">
+            </a>
+            <nav class="header-nav">
+                <a href="tel:+375447310558">+375 44 731 05 58</a>
+                <a href="#">
+                    <img src="../../assets/images/header-nav/telegram-black.png" alt="telegram-logo" width="29" height="29">
+                </a>
+                <a href="#">
+                    <img src="../../assets/images/header-nav/whatsapp1-black.png" alt="whatsapp-logo" width="29" height="29">
+                </a>
+                <a href="#">
+                    <img src="../../assets/images/header-nav/Viber-black.png" alt="viber-logo" width="29" height="29">
+                </a>
+                <a class="open-menu" href="#">
+                    <img src="../../assets/images/header-nav/menu-black.png" alt="menu-img" width="34" height="34">
+                </a>
+            </nav>
+            <img class="burger-open" src="../../assets/images/header-nav/menu-black.png" alt="menu-img" width="34" height="34">
+        </div>
+        <div class="menu">
+            <div class="content">
+                <div class="pages-menu">
+                    <a class="page-card" href="../../pages/cases/cases.html">
+                        <svg width="31" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.74975 6.87535H26.2498C27.2888 6.87535 28.1248 7.71129 28.1248 8.75035V25.0004C28.1248 26.0394 27.2888 26.8754 26.2498 26.8754H3.74975C2.71069 26.8754 1.87475 26.0394 1.87475 25.0004V8.75035C1.87475 7.71129 2.71069 6.87535 3.74975 6.87535Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M10.625 6.87547V5.00047C10.625 3.96141 11.4609 3.12547 12.5 3.12547H17.5C18.5391 3.12547 19.375 3.96141 19.375 5.00047V6.87547" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M28.1248 16.2499H1.87475" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M11.8748 16.2499V19.3749H18.1248V16.2499" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            </svg>
+                        <p>Кейсы</p>
+                    </a>
+                    <a class="page-card" href="#">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1285_323)">
+                            <path d="M22.7083 10.4061V16.8748" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M12.0833 26.2502L7.52857 21.6955C7.38854 21.5554 7.2223 21.4443 7.03932 21.3685C6.85634 21.2927 6.66022 21.2536 6.46216 21.2536C6.2641 21.2536 6.06798 21.2927 5.885 21.3685C5.70202 21.4443 5.53577 21.5554 5.39575 21.6955L1.7395 25.3517" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M8.95825 23.1248L12.2629 19.8201C12.403 19.68 12.5692 19.5689 12.7522 19.4931C12.9352 19.4172 13.1313 19.3782 13.3293 19.3782C13.5274 19.3782 13.7235 19.4172 13.9065 19.4931C14.0895 19.5689 14.2557 19.68 14.3958 19.8201L16.4583 21.8748" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M10.5129 27.8201L20.5754 17.7576C20.8555 17.4775 21.188 17.2552 21.5539 17.1036C21.9199 16.952 22.3121 16.8739 22.7083 16.8739C23.1044 16.8739 23.4966 16.952 23.8626 17.1036C24.2285 17.2552 24.561 17.4775 24.8411 17.7576L29.9739 22.8904" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M15.8176 10.6251C15.4132 10.6248 15.0117 10.5562 14.6301 10.422L12.7083 9.75009V3.50009L14.6301 4.17196C15.1156 4.34199 15.632 4.40557 16.1443 4.35839C16.6565 4.31121 17.1526 4.15437 17.5989 3.89853L18.2239 3.53915C18.6693 3.28459 19.1696 3.14104 19.6822 3.12064C20.1949 3.10025 20.7049 3.2036 21.1692 3.42196L22.7083 4.15634V10.4063L21.1692 9.67978C20.7049 9.46141 20.1949 9.35806 19.6822 9.37846C19.1696 9.39885 18.6693 9.5424 18.2239 9.79696L17.5989 10.1563C17.0561 10.465 16.4421 10.6266 15.8176 10.6251V10.6251Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1285_323">
+                            <rect width="30" height="30" fill="white" transform="matrix(-1 0 0 1 30.8333 0)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+
+                        <p>О нас</p>
+                    </a>
+                    <a class="page-card" href="../../pages/career/career.html">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.1199 25.1093L15.1667 28.9062L8.21362 25.1171L11.6589 6.87491H18.6746L22.1199 25.1093Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M18.6746 6.87496L20.4324 0.624954H9.90112L11.6589 6.87496" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            </svg>
+
+                        <p>Карьера</p>
+                    </a>
+                    <a class="page-card" href="../../pages/blog/blog.html">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.875 19.3748L18.625 24.1092L22.375 19.3748V3.74985C22.375 2.36703 21.2578 1.24985 19.875 1.24985H17.375C15.9922 1.24985 14.875 2.36703 14.875 3.74985V19.3748Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M8 8.12479H14.875" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M8 11.875H14.875" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M8 15.6249H14.875" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M8 19.3747H22.375" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M4.875 4.37491H26.125V28.7499H4.875V4.37491Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            </svg>
+
+                        <p>Блог</p>
+                    </a>
+                    <a class="page-card" href="#">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.458 28.1249H2.83301" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M16.5986 25H22.208" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M2.83301 3.12477V9.37477C2.83301 9.70629 2.96471 10.0242 3.19913 10.2587C3.43355 10.4931 3.75149 10.6248 4.08301 10.6248H8.36426L12.833 13.1248V10.6248H13.458C13.7895 10.6248 14.1075 10.4931 14.3419 10.2587C14.5763 10.0242 14.708 9.70629 14.708 9.37477V3.12477C14.708 2.79325 14.5763 2.47531 14.3419 2.24089C14.1075 2.00647 13.7895 1.87477 13.458 1.87477H4.08301C3.75149 1.87477 3.43355 2.00647 3.19913 2.24089C2.96471 2.47531 2.83301 2.79325 2.83301 3.12477Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M25.333 28.125V21.875C25.333 21.0462 25.0038 20.2514 24.4177 19.6653C23.8317 19.0793 23.0368 18.75 22.208 18.75H17.208C16.3792 18.75 15.5843 19.0793 14.9983 19.6653C14.4122 20.2514 14.083 21.0462 14.083 21.875" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M19.708 16.2497C17.9821 16.2497 16.583 14.8506 16.583 13.1247C16.583 11.3988 17.9821 9.99966 19.708 9.99966C21.4339 9.99966 22.833 11.3988 22.833 13.1247C22.833 14.8506 21.4339 16.2497 19.708 16.2497Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M7.48926 28.1248L5.70801 21.8748H15.708L17.4893 28.1248" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            </svg>
+
+                        <p>FAQ</p>
+                    </a>
+                    <a class="page-card" href="../../pages/Contacts/contacts.html">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.7915 29.3754H9.5415" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M15.1665 29.3757V22.5007" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M25.1665 14.3755H6.4165L2.354 18.438L6.4165 22.5005H25.1665V14.3755Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M5.1665 3.12589H23.9165L27.979 7.18839L23.9165 11.2509H5.1665V3.12589Z" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M15.1665 14.3755V11.2505" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            <path d="M15.1665 3.12552V0.000518799" stroke="#BDC5CC" stroke-width="1.24106" stroke-miterlimit="10"/>
+                            </svg>
+
+                        <p>Контакты</p>
+                    </a>
+                    <img class="close-menu" src="../../assets/images/header-nav/close.svg" alt="close-icon" width="34" height="34">
+                </div>
+                <h2>Услуги и цены</h2>
+                <div class="header-service">
+                    <ul class="header-service-block">
+                        <li class="header-service-title"><a href="../../pages/site-development/site-development.html">Разработка сайтов</a></li>
+                        <li><a href="../../pages/corporat-dev/corporat-dev.html">Корпоративные сайты</a></li>
+                        <li><a href="../../pages/shop-dev/shop-dev.html">Интернет-магазины</a></li>
+                        <li><a href="../../pages/vizitka/vizitka.html">Создание сайта-визитки</a></li>
+                        <li><a href="../../pages/bitrix1c/">Сайты на 1С-Битрикс</a></li>
+                        <li><a href="../../pages/modx/">Сайты на ModX</a></li>
+                        <li><a href="../../pages/solutions/solutions.html">Готовые решения 1С-Битрикс</a></li>
+                        <li><a href="../../pages/indiv-dev/indiv-dev.html">Индивидуальная разработка</a></li>
+                    </ul>
+                    <div class="header-service-inner header-service-block">
+                        <ul>
+                            <li class="header-service-title"><a href="../../pages/solutions/solutions.html">Внедрение решений</a></li>
+                            <li><a href="../../pages/bitrix24/bitrix24.html">Битрикс24</a></li>
+                            <li><a href="../../pages/vnedrenie1C/vnedrenie1c.html">1С-Битрикс</a></li>
+                        </ul>
+                        <ul>
+                            <li class="header-service-title"><a href="#">Разработка мобильных приложений</a></li>
+                            <li><a href="../../pages/android/android.html">Android приложения</a></li>
+                            <li><a href="../../pages/ios/ios.html">IOS приложения</a></li>
+                            <li><a href="../../pages/vr/vr.html">VR приложения</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-service-inner header-service-block">
+                        <ul>
+                            <li class="header-service-title"><a href="#">Программное обеспечение</a></li>
+                            <li><a href="#">Приложения на React JS</a></li>
+                            <li><a href="#">Приложения на Vue JS</a></li>
+                            <li><a href="#">Приложения на Angular JS</a></li>
+                            <li><a href="#">Приложения на Node JS</a></li>
+                        </ul>
+                        <ul >
+                            <li class="header-service-title"><a href="../../pages/games/games.html">Создание игр</a></li>
+                            <li><a href="../../pages/mob-games/mob-games.html">Мобильные игры</a></li>
+                            <li><a href="../../pages/pc-games/pc-games.html">Игры для ПК</a></li>
+                        </ul>
+                    </div>
+                    <ul class="header-service-titles header-service-block">
+                        <li class="header-service-title"><a href="../../pages/support/support.html">Техническая поддержка</a></li>
+                        <li class="header-service-title"><a href="../../pages/bitrix1c/bitrix1c.html">Интеграция сайта с 1С-Битрикс</a></li>
+                        <li class="header-service-title"><a href="../../pages/automatic-biz/automatic-biz.html">Автоматизация бизнес-процессов</a></li>
+                        <li class="header-service-title"><a href="../../pages/automatic-biz/automatic-biz.html">Анализ и автоматизация бизнес-процессов</a></li>
+                        <li class="header-service-title"><a href="../../pages/outsourcing/outsourcing.html">IT-аутсорсинг</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <div class="burger-head">
+                <a href="tel:+375447310558">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M20.9994 16.4767V19.1864C21.0036 20.2223 20.0722 21.0873 19.0264 20.9929C10 21 3 13.935 3.00706 4.96919C2.91287 3.92895 3.77358 3.00106 4.80811 3.00009H7.52325C7.96247 2.99577 8.38828 3.151 8.72131 3.43684C9.66813 4.24949 10.2771 7.00777 10.0428 8.10428C9.85987 8.96036 8.9969 9.55929 8.41019 10.1448C9.69858 12.4062 11.5746 14.2785 13.8405 15.5644C14.4272 14.9788 15.0273 14.1176 15.8851 13.935C16.9855 13.7008 19.7615 14.3106 20.5709 15.264C20.8579 15.6021 21.0104 16.0337 20.9994 16.4767Z" stroke="#8E969D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      +375 44 731 05 58
+                </a>
+                <img class="close-burger" src="../../assets/images/header-nav/close.svg" alt="close-icon" width="34" height="34">
+            </div>
+            <div class="burger-content">
+                <ul class="burger-items">
+                    <li >
+                        <p class="dropdown">Услуги</p>
+                        <ul class="submenu">
+                            <li class="mobileBack" ><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H7.41421L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z" fill="#9A2538"/>
+                              </svg></li>
+                              <li>
+                                <p class="dropdown2lvl">Разработка сайтов</p>
+                                <ul class="submenu2lvl">
+                                    <li class="mobileBack2lvl"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H7.41421L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z" fill="#9A2538"/>
+                                      </svg></li>
+                                    <li><a href="../../pages/corporat-dev/corporat-dev.html">Корпоративные сайты</a></li>
+                                    <li><a href="../../pages/shop-dev/shop-dev.html">Интернет-магазины</a></li>
+                                    <li><a href="../../pages/landing-dev/landing-dev.html">Лендинги</a></li>
+                                    <li><a href="../../pages/vizitka/vizitka.html">Создание сайта-визитки</a></li>
+                                    <li><a href="../../pages/bitrix1c/bitrix1c.html">Перенос сайтов на 1С-Битрикс</a></li>
+                                    <li><a href="../../pages/vnedrenie1C/vnedrenie1c.html">Сайты на 1С-Битрикс</a></li>
+                                    <li><a href="../../pages/modx/modx.html">Сайты на ModX</a></li>
+                                    <li><a href="../../pages/solutions/solutions.html">Готовые решения 1С-Битрикс</a></li>
+                                    <li><a href="../../pages/indiv-dev/indiv-dev.html">Индивидуальная разработка</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <p class="dropdown2lvl">Внедрение решений</p>
+                                <ul class="submenu2lvl">
+                                    <li class="mobileBack2lvl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H7.41421L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z" fill="#9A2538"/>
+                              </svg></li>
+                                    <li><a href="../../pages/bitrix24/bitrix24.html">Битрикс24</a></li>
+                                    <li><a href="../../pages/bitrix1c/bitrix1c.html">1С-Битрикс</a></li>
+
+                                </ul>
+                              </li>
+                              <li>
+                                <p class="dropdown2lvl">Разработка мобильных приложений</p>
+                                <ul class="submenu2lvl">
+                                    <li class="mobileBack2lvl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H7.41421L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z" fill="#9A2538"/>
+                              </svg></li>
+                                    <li><a href="../../pages/android/android.html">Android приложения</a></li>
+                                    <li><a href="../../pages/ios/ios.html">IOS приложения</a></li>
+                                    <li><a href="../../pages/vr/vr.html">VR приложения</a></li>
+
+                                </ul>
+                              </li>
+                              <li>
+                                <p class="dropdown2lvl">Программное обеспечение</p>
+                                <ul class="submenu2lvl">
+                                    <li class="mobileBack2lvl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H7.41421L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z" fill="#9A2538"/>
+                              </svg></li>
+                                    <li><a href="#">Приложения на React JS</a></li>
+                                    <li><a href="#">Приложения на Vue JS</a></li>
+                                    <li><a href="#">Приложения на Angular JS</a></li>
+                                    <li><a href="#">Приложения на Node JS</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <p class="dropdown2lvl">Создание игр</p>
+                                <ul class="submenu2lvl">
+                                    <li class="mobileBack2lvl"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.7071 5.29289C12.0976 5.68342 12.0976 6.31658 11.7071 6.70711L7.41421 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H7.41421L11.7071 17.2929C12.0976 17.6834 12.0976 18.3166 11.7071 18.7071C11.3166 19.0976 10.6834 19.0976 10.2929 18.7071L4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929L10.2929 5.29289C10.6834 4.90237 11.3166 4.90237 11.7071 5.29289Z" fill="#9A2538"/>
+                              </svg></li>
+                                    <li><a href="../../pages/mob-games/mob-games.html">Мобильные игры</a></li>
+                                    <li><a href="../../pages/pc-games/pc-games.html">Игры для ПК</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="../../pages/support/support.html">Техническая поддержка</a></li>
+                              <li><a href="../../pages/bitrix1c/bitrix1c.html">Интеграция сайта с 1С-Битрикс</a></li>
+                              <li><a href="../../pages/automatic-biz/automatic-biz.html">Анализ и автоматизация бизнес-процессов</a></li>
+                              <li><a href="../../pages/outsourcing/outsourcing.html">IT-аутсорсинг</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../pages/cases/cases.html">Кейсы</a>
+                    </li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="../../pages/career/career.html">Карьера</a></li>
+                    <li><a href="../../pages/blog/blog.html">Блог</a></li>
+                    <li><a href="#">F.A.Q.</a></li>
+                    <li><a href="../../pages/Contacts/contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="burger-footer">
+                <a href="#">
+                    <img src="../../assets/images/main-page/telegram.png" alt="telegram-logo" width="29" height="29">
+                </a>
+                <a href="#">
+                    <img src="../../assets/images/main-page/whatsapp.png" alt="whatsapp-logo" width="29" height="29">
+                </a>
+                <a href="#">
+                    <img src="../../assets/images/main-page/Viber.png" alt="viber-logo" width="29" height="29">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <div class="content">
+                <a href="#"><p>Главная</p></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16 15L19 12L16 9L15.293 9.707L17.086 11.5H5V12.5H17.086L15.293 14.293L16 15Z" fill="#1E2327"/>
+              </svg>
+              <h1>Контакты</h1>
+            </div>
+        </div>
+        <div class="contacts-inner">
+            <div class="content">
+                <div class="contacts-card">
+                    <h2>Крыж Вадим</h2>
+                    <img class="contacts-img" src="../../assets/images/contacts/image1.png" alt="contacts-photo" width="422" height="438">
+                    <p class="poz">Специалист по продажам</p>
+                    <p class="spec"><span>Специализация:</span> сайты, интернет-магазины, CRM</p>
+                    <a href="tel:+375291291292"><span>+ 375 29</span> 129 12 92</a>
+                    <div class="telegram">
+                        <img src="../../assets/images/contacts/QR.png" alt="qr-code" width="97" height="96">
+                        <p><span>Telegramm:</span> Консультация и оценка проекта
+                        </p>
+                    </div>
+                </div>
+                <div class="contacts-card">
+                    <h2>Чибисов Максим</h2>
+                    <img class="contacts-img" src="../../assets/images/contacts/image2.png" alt="contacts-photo" width="422" height="438">
+                    <p class="poz">Специалист по продажам</p>
+                    <p class="spec"><span>Специализация:</span> разработка проектных внедрений</p>
+                    <a href="tel:+375291291292"><span>+ 375 29</span> 129 12 92</a>
+                    <div class="telegram">
+                        <img src="../../assets/images/contacts/QR.png" alt="qr-code" width="97" height="96">
+                        <p><span>Telegramm:</span> Консультация и оценка проекта
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="address-inner">
+            <div class="content">
+                <div class="address-inner-block">
+                    <h2>Адреса и контакты:</h2>
+                    <div class="address-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 11C20 15.4183 16.4183 19 12 21C7.58172 19 4 15.4183 4 11C4 6.58172 7.58172 3 12 3C16.4183 3 20 6.58172 20 11Z" stroke="#9A2538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11Z" stroke="#9A2538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        <div class="address-info">
+                            <h3>Офис в г. Марьина Горка </h3>
+                            <p><span>Адрес: </span>ул. Спасателей, 7, офис 66</p>
+                            <p><span>Телефон: </span> <a href="tel:+375445353227">+ 375 44 53 53 227</a></p>
+                        </div>
+                    </div>
+                    <div class="address-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 11C20 15.4183 16.4183 19 12 21C7.58172 19 4 15.4183 4 11C4 6.58172 7.58172 3 12 3C16.4183 3 20 6.58172 20 11Z" stroke="#9A2538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11Z" stroke="#9A2538" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        <div class="address-info">
+                            <h3>Офис в г. Минск  </h3>
+                            <p><span>Адрес: </span>ул. Платонова, 1 “б”</p>
+                            <p><span>Телефон: </span> <a href="tel:+375445353227">+ 375 44 53 53 227</a></p>
+                        </div>
+                    </div>
+                    <div class="address-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 16L3.46967 15.4697L3.25 15.6893V16H4ZM17 3L17.5303 2.46967C17.2374 2.17678 16.7626 2.17678 16.4697 2.46967L17 3ZM21 7L21.5303 7.53033C21.8232 7.23744 21.8232 6.76256 21.5303 6.46967L21 7ZM8 20V20.75H8.31066L8.53033 20.5303L8 20ZM4 20H3.25C3.25 20.4142 3.58579 20.75 4 20.75V20ZM4.53033 16.5303L17.5303 3.53033L16.4697 2.46967L3.46967 15.4697L4.53033 16.5303ZM16.4697 3.53033L20.4697 7.53033L21.5303 6.46967L17.5303 2.46967L16.4697 3.53033ZM20.4697 6.46967L7.46967 19.4697L8.53033 20.5303L21.5303 7.53033L20.4697 6.46967ZM8 19.25H4V20.75H8V19.25ZM4.75 20V16H3.25V20H4.75ZM13.4697 6.53033L17.4697 10.5303L18.5303 9.46967L14.5303 5.46967L13.4697 6.53033Z" fill="#9A2538"/>
+                          </svg>
+                        <div class="address-info">
+                            <h3>По вопросам сотрудничества</h3>
+                            <p><span>E-mail: </span><a href="mailto:partner@tehin.by">partner@tehin.by</a></p>
+                            <p><span>Телефон: </span> <a href="tel:+375292569878">+ 375 29 256 98 78</a></p>
+                        </div>
+                    </div>
+                    <div class="address-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 16L3.46967 15.4697L3.25 15.6893V16H4ZM17 3L17.5303 2.46967C17.2374 2.17678 16.7626 2.17678 16.4697 2.46967L17 3ZM21 7L21.5303 7.53033C21.8232 7.23744 21.8232 6.76256 21.5303 6.46967L21 7ZM8 20V20.75H8.31066L8.53033 20.5303L8 20ZM4 20H3.25C3.25 20.4142 3.58579 20.75 4 20.75V20ZM4.53033 16.5303L17.5303 3.53033L16.4697 2.46967L3.46967 15.4697L4.53033 16.5303ZM16.4697 3.53033L20.4697 7.53033L21.5303 6.46967L17.5303 2.46967L16.4697 3.53033ZM20.4697 6.46967L7.46967 19.4697L8.53033 20.5303L21.5303 7.53033L20.4697 6.46967ZM8 19.25H4V20.75H8V19.25ZM4.75 20V16H3.25V20H4.75ZM13.4697 6.53033L17.4697 10.5303L18.5303 9.46967L14.5303 5.46967L13.4697 6.53033Z" fill="#9A2538"/>
+                          </svg>
+                        <div class="address-info">
+                            <h3>Акты и бухгалтерия</h3>
+                            <p><span>E-mail: </span><a href="mailto:buh@tehin.by">buh@tehin.by</a></p>
+                            <p><span>Телефон: </span> <a href="tel:+375292569878">+ 375 29 256 98 78</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="address-inner-block address-inner-block-black">
+                    <img src="../../assets/images/contacts/Documents.svg" alt="documents-icon" width="136" height="136">
+                    <h3>Реквизиты</h3>
+                    <p>Общество с ограниченной ответственностью "ТехноИнновация"</p>
+                    <a class="bordered-btn" href="#" download>Скачать</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer dark-footer">
+        <div class="content">
+            <div class="footer-service">
+                <ul class="footer-service-block">
+                    <li class="footer-service-title"><a href="../../pages/site-development/site-development.html">Разработка сайтов</a></li>
+                    <li><a href="../../pages/corporat-dev/corporat-dev.html">Корпоративные сайты</a></li>
+                    <li><a href="../../pages/shop-dev/shop-dev.html">Интернет-магазины</a></li>
+                    <li><a href="../../pages/vizitka/vizitka.html">Создание сайта-визитки</a></li>
+                    <li><a href="../../pages/bitrix1c/bitrix1c.html">Сайты на 1С-Битрикс</a></li>
+                    <li><a href="../../pages/modx/modx.html">Сайты на ModX</a></li>
+                    <li><a href="../../pages/solutions/solutions.html">Готовые решения 1С-Битрикс</a></li>
+                    <li><a href="../../pages/indiv-dev/indiv-dev.html">Индивидуальная разработка</a></li>
+                </ul>
+                <div class="footer-service-inner footer-service-block">
+                    <ul>
+                        <li class="footer-service-title"><a href="">Внедрение решений</a></li>
+                        <li><a href="../../pages/bitrix24/bitrix24.html">Битрикс24</a></li>
+                        <li><a href="../../pages/bitrix1c/bitrix1c.html">1С-Битрикс</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer-service-title"><a href="../../pages/mob-dev/mob-dev.html">Разработка мобильных приложений</a></li>
+                        <li><a href="../../pages/android/android.html">Android приложения</a></li>
+                        <li><a href="../../pages/ios/ios.html">IOS приложения</a></li>
+                        <li><a href="../../pages/vr/vr.html">VR приложения</a></li>
+                    </ul>
+                </div>
+                <div class="footer-service-inner footer-service-block">
+                    <ul>
+                        <li class="footer-service-title"><a href="#">Программное обеспечение</a></li>
+                        <li><a href="#">Приложения на React JS</a></li>
+                        <li><a href="#">Приложения на Vue JS</a></li>
+                        <li><a href="#">Приложения на Angular JS</a></li>
+                        <li><a href="#">Приложения на Node JS</a></li>
+                    </ul>
+                    <ul >
+                        <li class="footer-service-title"><a href="../../pages/games/games.html">Создание игр</a></li>
+                        <li><a href="../../pages/mob-games/mob-games.html">Мобильные игры</a></li>
+                        <li><a href="../../pages/pc-games/pc-games.html">Игры для ПК</a></li>
+                    </ul>
+                </div>
+                <ul class="footer-service-titles footer-service-block">
+                    <li class="footer-service-title"><a href="../../pages/support/support.html">Техническая поддержка</a></li>
+                    <li class="footer-service-title"><a href="../../pages/vnedrenie1C/vnedrenie1c.html">Интеграция сайта с 1С-Битрикс</a></li>
+                    <li class="footer-service-title"><a href="../../pages/automatic-biz/automatic-biz.html">Автоматизация бизнес-процессов</a></li>
+                    <li class="footer-service-title"><a href="../../pages/automatic-biz/automatic-biz.html">Анализ и автоматизация бизнес-процессов</a></li>
+                    <li class="footer-service-title"><a href="../../pages/outsourcing/outsourcing.html">IT-аутсорсинг</a></li>
+                </ul>
+            </div>
+            <div class="footer-service-links">
+                <a href="../../pages/cases/cases.html" class="footer-service-link">Кейсы</a>
+                <a href="#" class="footer-service-link">О нас</a>
+                <a href="../../pages/career/career.html" class="footer-service-link">Карьера</a>
+                <a href="../../pages/blog/blog.html" class="footer-service-link">Блог</a>
+                <a href="#" class="footer-service-link">FAQ</a>
+                <a href="../../pages/Contacts/contacts.html" class="footer-service-link">Контакты</a>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="content">
+            <div class="footer-contacts">
+                <div class="footer-contacts-inner">
+                    <div class="footer-logo">
+                        <a class="header-logo" href="/">
+                            <img src="../../assets/images/footer/logo-w.png" alt="logo" width="244" height="72">
+                        </a>
+                    </div>
+                    <div class="contacts-wrapper">
+                        <a href="tel:+375447310558">+375 44 731 05 58</a>
+                        <p><span class="contacts-bold-text">Наш адрес:</span> г. Минск, ул. Платонова 1 “Б”. </p>
+                        <p>
+                            <span class="contacts-bold-text">E-mail:</span>
+                            <a href="mailto:m.chibisov@techin.by">m.chibisov@techin.by</a>
+                        </p>
+                    </div>
+                    <div class="footer-contacts-qr">
+                        <img src="../../assets/images/footer/QR-lite.png" alt="qr-code" width="97" height="96">
+                        <p><span class="contacts-bold-text">Консультация</span> <br> по вопросам разработки</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="../../assets/images/footer/telegram-w.png" alt="telegram-logo" width="34" height="34">
+                        </a>
+                        <a href="#">
+                            <img src="../../assets/images/footer/whatsapp-w.png" alt="whatsapp-logo" width="34" height="34">
+                        </a>
+                        <a href="#">
+                            <img src="../../assets/images/footer/Viber-w.png" alt="viber-logo" width="34" height="34">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>© 2023 ООО “ТехноИнновация”. Все права защищены. </p>
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assets/js/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

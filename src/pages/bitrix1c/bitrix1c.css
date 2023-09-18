@@ -1,0 +1,178 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+
+.bitrix1c-hero {
+    background-color: var(--main-dark-color);
+    padding: 150px 0;
+    width: 100%;
+    color: var(--white-color);
+}
+.bitrix1c-hero .content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.bitrix1c-hero-block {
+    width: calc((100% - 100px) / 2);
+}
+.bitrix1c-hero-block p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.section-1 {
+    padding: 150px 0 0;
+    position: relative;
+    background-color: var(--light-bg-color);
+}
+.section-1 .content p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-1 .content h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 100px 0;
+}
+.section-1-inner {
+    display: flex;
+    gap: 100px;
+}
+.section-1-wrap {
+    padding: 50px 0 50px 50px;
+    background-color: var(--main-dark-color);
+    color: var(--white-color);
+    width: calc((100% - 100px) / 2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.section-1-wrap p {
+    max-width: 670px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-1-wrap p:first-child {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 54px */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-2 {
+    background-color: var(--light-bg-color);
+}
+.section-2 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.section-2 .content h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-2 .content p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-3 {
+    padding: 150px 0;
+}
+.section-3 .content p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.comment {
+    padding-top: 0;
+}
+@media (max-width:1024px) {
+    .bitrix1c-hero , .section-1 {
+        padding: 75px 0;
+    }
+    .bitrix1c-hero .content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .bitrix1c-hero-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bitrix1c-hero-block h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .bitrix1c-hero-block p , .section-1 .content p , .section-2 .content p , .section-3 .content p , .section-1-wrap p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-9 , .section-1 , .section-10 , .section-3{
+        padding-top: 0;
+    }
+    .section-1 .content h2 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        margin: 50px 0;
+    }
+    .section-1-inner {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section-1-wrap {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+    }
+    .section-1-block img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .section-10-bold .content:first-child h2 , .section-2 .content h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .section-2 .content {
+        gap: 50px;
+    }
+    .section-10-bold .section-10-block1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-3 {
+        padding-bottom: 0;
+    }
+    .bitrix1c-hero-block .bordered-btn {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .section-10  {
+        padding-top: 50px;
+    }
+
+}

@@ -1,0 +1,213 @@
+@import url(../../assets/styles/fonts.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/rubrica.css);
+@import url(../../assets/styles/contact-us.css);
+@import url(../../assets/styles/helper.css);
+@import url(../../assets/styles/examples.css);
+@import url(../../assets/styles/technology.css);
+@import url(../../assets/styles/footer.css);
+
+.solutions-hero {
+    padding: 150px 0 0;
+    background-color: var(--main-dark-color) ;
+    background-image: url(../../assets/images/solutions/Group.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+    margin-bottom: 100px;
+}
+.solutions-hero .content {
+    display: flex;
+    gap: 100px;
+}
+.solutions-block {
+    max-width: 50%;
+    position: relative;
+}
+.solutions-block img {
+    width: 120%;
+    /* height: 100%; */
+    margin-top: 30px;
+    margin-bottom: -100px;
+    object-fit: contain;
+}
+.solutions-block-2 {
+    padding-bottom: 150px;
+}
+.solutions-block h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.solutions-block p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-top: 100px;
+}
+.section-1 {
+    padding: 150px 0;
+}
+.section-1 h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 150px;
+}
+.section-1 h2 span{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-1-wrap {
+    display: flex;
+    gap: 100px;
+}
+.section-2 {
+    background-color: #0D1228;
+    background-image: url(../../assets/images/solutions/dev.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 725px;
+}
+.section-9-bl-bg  {
+    padding-bottom: 0;
+}
+.section-3 {
+    padding: 150px 0;
+}
+.section-3 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-3 h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 150px 0;
+}
+.section-3-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px ;
+    margin-bottom: 150px;
+}
+.section-3-card {
+    max-width: 322px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.section-3-card p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    text-align: center;
+}
+.section-3 h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+    margin-top: 30px;
+}
+
+@media (max-width:1024px) {
+    .solutions-hero {
+        padding: 75px 0 0 ;
+        margin-bottom: 0;
+    }
+
+    .solutions-hero .content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .solutions-block {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .solutions-block h1 , .solutions-block h2 , .solutions-block p {
+        text-align: center;
+    }
+    .solutions-block img {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+        margin-bottom: 0;
+    }
+    .solutions-block .bordered-btn {
+        margin: 50px auto 0;
+    }
+    .solutions-block h2 {
+        font-size: 30px;
+    }
+    .solutions-block p {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .solutions-block-2 {
+        padding-bottom: 75px;
+    }
+    .section-1-wrap {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section-1 {
+        padding: 0 0 75px 0;
+    }
+    .section-1 h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .section-1 h2 span{
+        font-size: 30px;
+    }
+    .section-2 {
+        height: 500px;
+    }
+    .section-3 {
+        padding: 0 0 75px 0;
+    }
+    .section-3 h2 {
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    .section-3-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .section-3 h3 , .section-3 p {
+        font-size: 20px;
+    }
+    .section-3 h2 {
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    
+}
+@media (max-width:768px) {
+    .solutions-block img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        margin-bottom: 0;
+    }
+    .section-2 {
+        height: 350px;
+    }
+}

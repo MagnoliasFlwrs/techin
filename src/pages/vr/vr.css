@@ -1,0 +1,281 @@
+@import url(../../assets/styles/fonts.css);
+@import url(../../assets/styles/swiper-bundle.min.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/rubrica.css);
+@import url(../../assets/styles/contact-us.css);
+@import url(../../assets/styles/helper.css);
+@import url(../../assets/styles/examples.css);
+@import url(../../assets/styles/technology.css);
+@import url(../../assets/styles/footer.css);
+
+.vr-hero {
+    padding: 150px 0;
+    width: 100%;
+    background-color:  var(--light-bg-color);
+    background-image: url(../../assets/images/vr/VR_11.png);
+    background-repeat: no-repeat;
+    background-position: left 5% bottom;
+    background-size: 50% auto;
+}
+.vr-hero .content {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+.vr-hero-block {
+    max-width: calc((100% - 100px) /2 );
+    width: 100%;
+}
+.vr-hero h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.vr-hero  p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-top: 100px;
+}
+.vr-hero-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 50px;
+    display: none;
+}
+.section-1 {
+    padding: 150px 0 0;
+    background-color: #0D1228;
+    color: var(--white-color);
+}
+.section-1 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-1 p span {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%;
+}
+.section-2 {
+    padding: 150px 0;
+    background-color: #0D1228;
+    color: var(--white-color);
+    background-image: url(../../assets/images/vr/pokemob.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.section-2 .content {
+    display: flex;
+    justify-content: flex-end;
+}
+.section-2-block {
+    max-width: calc((100% - 100px)/2);
+    width: 100%;
+}
+.section-2-block p {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+.section-3 {
+    padding: 150px 0;
+    background-color:  var(--light-bg-color);
+    background-image: url(../../assets/images/vr/Frame216.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 47% auto;
+}
+.section-10-w .section-10-block1-huge-text h3 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-10-w .section-10-block1-huge-text h3 span {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-4 {
+    padding: 0 0 150px ;
+}
+.section-4 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-9-dark-bg {
+    padding-bottom: 980px;
+    background-image: url(../../assets/images/vr/vr-man.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 1080px;
+}
+.section-10-block1 p {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-10-block1 p span {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-5 {
+    padding: 150px 0 0;
+    background-color: var(--light-bg-color);
+}
+.section-5 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-10-contacts {
+    padding-bottom: 0;
+}
+@media (max-width:1600px) {
+    .section-2 {
+        background-position: left -250px bottom;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .vr-hero {
+        padding: 75px 0 0;
+        background-image: none;
+    }
+    .vr-hero .content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .vr-hero-block {
+        max-width: 100%;
+    }
+    .vr-hero-block img {
+        display: block;
+    }
+    .vr-hero h1 {
+        text-align: center;
+    }
+    .vr-hero h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .vr-hero  p {
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .section-1 {
+        padding: 0;
+        background-color: #0D1228;
+        color: var(--white-color);
+    }
+    .section-1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-1 p span {
+        font-size: 20px;
+    }
+    .section-2 {
+        padding: 75px 0 0;
+        background-color: #0D1228;
+        color: var(--white-color);
+        background-image: none;
+
+    }
+    .section-2 img {
+        display: block;
+    }
+    .section-2 .content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .section-2-block {
+        max-width: 100%;
+        width: 100%;
+    }
+    .section-2-block p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .section-3 {
+        padding: 75px 0;
+        background-image: none;
+    }
+    .section-4 {
+        padding: 0 0 75px ;
+    }
+    .section-4 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-10 {
+        padding: 0 0 75px;
+    }
+    .section-10-w .section-10-block1-huge-text h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .section-10-w .section-10-block1-huge-text h3 span {
+        font-size: 30px;
+    }
+    .section-9-dark-bg {
+        padding-bottom: 580px;
+        background-image: url(../../assets/images/vr/vr-man.png);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .section-10-block1 p {
+        font-size: 30px;
+    }
+    .section-10-block1 p span {
+        font-size: 30px;
+    }
+    .section-5 {
+        padding:0;
+    }
+    .section-5 p {
+        font-size: 20px;
+    }
+    .section-10-contacts {
+        padding-top: 75px;
+    }
+    .section-10-contacts .section-10-block1 img {
+        display: none;
+
+    }
+
+}
+@media (max-width:768px) {
+    .section-9-dark-bg {
+        padding-bottom: 180px;
+        background-image: url(../../assets/images/vr/vr-man.png);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

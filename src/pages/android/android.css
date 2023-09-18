@@ -1,0 +1,283 @@
+@import url(../..//assets/styles/fonts.css);
+@import url(../..//assets/styles/swiper-bundle.min.css);
+@import url(../..//assets/styles/header.css);
+@import url(../..//assets/styles/rubrica.css);
+@import url(../..//assets/styles/contact-us.css);
+@import url(../..//assets/styles/helper.css);
+@import url(../..//assets/styles/examples.css);
+@import url(../..//assets/styles/technology.css);
+@import url(../..//assets/styles/footer.css);
+
+.android-hero {
+    padding: 150px 0;
+    background-color: var(--main-dark-color);
+    background-image:url(../../assets/images/android/iPhone\ 14\ Pro.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--white-color);
+}
+.android-hero .content {
+    display: flex;
+    justify-content: flex-end;
+}
+.android-hero-block {
+    max-width: calc((100% - 100px)/2);
+    width: 100%;
+}
+.android-hero p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-top: 100px;
+}
+.section-9 .section-9-block1 p {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-9 .section-9-block1 p span {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-9-dark .section-9-block1 p{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section-9-block1 p {
+    max-width: 100%;
+}
+.section-9-dark {
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+/* .section-9 .section-9-block1 img , .section-10-block1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+.section-1 {
+    padding: 150px 0;
+    background-color: var(--main-dark-color);
+    color: var(--white-color);
+}
+.section-1 p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-2 {
+    padding: 150px 0 0;
+}
+.section-2 .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.section-2-block {
+    max-width: calc((100% - 100px)/2);
+    width: 100%;
+}
+.section-2-block h3 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.section-2-block p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    margin-bottom: 100px;
+}
+
+.section-2-block .dop-contact{
+    max-width: 350px;
+    width: 100%;
+
+}
+.section-2-block .dop-contact .colored-btn {
+    width: 100%;
+}
+.section-2-block .dop-contact span {
+    color: #BFBFBF;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+}
+.section-2-block .dop-contact .social {
+    margin: 50px 0;
+}
+.section-3 {
+    padding: 150px 0;
+    background-color: var(--light-bg-color);
+}
+.section-3 h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 150px;
+}
+.section-3-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.section-3-card {
+    max-width: 355px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.section-3-card p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    text-align: center;
+}
+.social img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+}
+
+@media (max-width:1600px) {
+    .android-hero {
+        background-position: left -200px center;
+    }
+}
+@media (max-width:1024px) {
+    .android-hero-block {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .android-hero-block .bordered-btn {
+        margin: 50px auto 0;
+    }
+    .android-hero p {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .android-hero {
+        padding: 75px 0 75px;
+        background-color: var(--main-dark-color);
+        background-image:url(../../assets/images/android/8630.png);
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: var(--white-color);
+    }
+    .section-9 .section-9-block1 p {
+        font-size: 30px;
+    }
+    .section-9 .section-9-block1 p span {
+        font-size: 30px;
+    }
+    .section-10 {
+        padding: 0  0 75px;
+    }
+    .section-9-dark .section-9-block1 p{
+        font-size: 30px;
+    }
+    .section-9-dark , .section-9  {
+        padding-top: 0;
+    }
+    .section-1 {
+        padding: 75px 0;
+    }
+    .section-1 p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .section-2 {
+        padding: 75px 0 0;
+    }
+    .section-2 .content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section-2-block {
+        max-width: 100%;
+        width: 100%;
+    }
+    .section-2-block h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .section-2-block p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .dop-contact {
+        margin: 0 auto;
+    }
+    /* .section-2-block:first-child {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    } */
+    .section-2-block:first-child img {
+        width: 20%;
+        height: 20%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+    }
+    .section-2-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-2-block .dop-contact span {
+        text-align: center;
+    }
+    .section-3 {
+        padding: 75px 0;
+    }
+    .section-3 h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+}
+@media (max-width:768px) {
+    .section-2-block:first-child img {
+        width: 30%;
+        height: 30%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto;
+    }
+    .section-3 h2 {
+        margin-bottom: 75px;
+    }
+    .section-3-cards {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .section-3-card {
+        max-width: 100%;
+        width: 100%;
+    }
+}
