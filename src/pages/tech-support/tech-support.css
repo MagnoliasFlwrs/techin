@@ -733,6 +733,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal; }
+  @media (max-width: 768px) {
+    .example-card p {
+      font-size: 25px; } }
 .example-card span {
   color: #1E2327;
   font-family: Ubuntu;
@@ -740,6 +743,10 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal; }
+.example-card .stars {
+  display: flex;
+  gap: 20px;
+  align-items: center; }
 
 .comment-vs-line .info-inner {
   display: flex;
