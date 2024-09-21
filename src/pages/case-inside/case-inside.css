@@ -15,9 +15,105 @@
     background-repeat: no-repeat;
     background-position: right bottom -50px;
 }
+.case-inside2-hero {
+    padding: 150px 0;
+    background-color:#08B0CC;
+    background-image: url(./a-photo-of-a-young-woman-with-long-blonde-hair-dre-P_bGWVAyQdG4Zy24mWP_PQ-Er9VR38LQU6i_KPIZlpqcw%201.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
 .case-inside-hero-block {
     max-width: calc((100% - 100px)/2);
     width: 100%;
+}
+.case-inside2-hero .case-inside-hero-block {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.case-inside2-hero .case-inside-hero-block .text-block , .case-inside2-hero .case-inside-hero-block  .contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block button {
+    display: flex;
+    padding: 30px 40px;
+    align-items: center;
+    border-radius: 3px;
+    background: #FFF;
+    border: none;
+    color: #1E2327;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 97.4%; /* 19.48px */
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    width: 342px;
+    cursor: pointer;
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block button:hover {
+    background: var(--brand-color);
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block .contact-links {
+    display: flex;
+    align-items: center;
+    width: 342px;
+    justify-content: space-between;
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block .contact-links .tg svg {
+    transform: scale(1);
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block .contact-links a:hover svg {
+    animation: scaleIn 1s forwards;
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block .contact-links a.tg:hover svg path {
+    animation: changeTgColor 1s forwards;
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block .contact-links a.watsapp:hover svg path {
+    animation: changeWatsAppColor 1s forwards;
+}
+.case-inside2-hero .case-inside-hero-block  .contact-block .contact-links a.viber:hover svg path {
+    animation: changeViberColor 1s forwards;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes changeTgColor {
+    from {
+        fill: #fff;
+    }
+    to {
+        fill: #01C2FF;
+    }
+}
+@keyframes  changeWatsAppColor{
+    from {
+        fill: #fff;
+    }
+    to {
+        fill: #04C29A;
+    }
+}
+@keyframes  changeViberColor{
+    from {
+        fill: #fff;
+    }
+    to {
+        fill: #9747FF;
+    }
 }
 .case-inside-hero-block h2 {
     margin-top: 20px;
@@ -26,6 +122,14 @@
     font-weight: 400;
     line-height: normal;
 }
+.case-inside2-hero .case-inside-hero-block h1 {
+    color: #FFF;
+    margin-bottom: 0;
+}
+.case-inside2-hero .case-inside-hero-block p {
+    color: #FFF;
+    margin-top: 0;
+}
 .case-inside-hero-block p {
     font-size: 30px;
     font-style: normal;
@@ -33,7 +137,7 @@
     line-height: 180%;
     margin-top: 100px;
 }
-.case-inside-hero img {
+.case-inside-hero img , .case-inside2-hero img {
     width: 50%;
     height: 50%;
     margin: 30px auto 0;
@@ -107,31 +211,162 @@
     display: inline-block;
     margin: 150px auto 0 0;
 }
+
+.case-inside-2-text-container {
+   padding: 150px 0;
+}
+.case-inside-2-text-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.case-inside-2-text-container .content h2 {
+    color: #1E2327;
+    font-family: Ubuntu;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.case-inside-2-text-container .content p {
+    color: #1E2327;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 54px */
+}
+.case-inside-2-text-container .content span {
+    color: #1E2327;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 54px */
+}
+.case-inside-2-text-container .content  ol{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 50px;
+}
+.case-inside-2-text-container .content  ol li {
+    display: flex;
+    gap: 10px;
+    color: #1E2327;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 54px */
+}
+.case-inside-2-text-container .content  ol li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #9A2538;
+    margin-top: 17px;
+    flex-shrink: 0;
+}
+.case-inside-2-text-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 50px;
+}
+.case-inside-2-text-container ul li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.case-inside-2-text-container ul li .stage-num {
+    color: #1E2327;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.case-inside-2-text-container ul li .stage-descr {
+    color: #1E2327;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 36px */
+}
+.case-inside-2-text-container .content .image-container {
+    width: 100%;
+    height: 959px;
+}
+.case-inside-2-text-container .image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
 @media (max-width:1600px) {
-    .case-inside-hero {
+    .case-inside-hero  {
         background-size: 50% auto;
+    }
+    .case-inside-2-text-container .content .image-container {
+        width: 100%;
+        height: 600px;
     }
 }
 @media (max-width:1024px) {
-    .case-inside-hero {
+    .case-inside-hero , .case-inside2-hero{
         background-image: none;
         padding: 75px 0 0;
         text-align: center;
+    }
+    .case-inside-2-text-container .content .image-container {
+        width: 100%;
+        height: 450px;
+    }
+    .case-inside-2-text-container {
+        padding: 0 0 75px ;
     }
     .case-inside-hero-block {
         max-width: 100%;
         width: 100%;
     }
+    .case-inside2-hero .case-inside-hero-block {
+        align-items: center;
+    }
     .case-inside-hero-block h2 {
         margin-top: 20px;
         font-size: 30px;
     }
-    .case-inside-hero-block p {
+    .case-inside-2-text-container .content h2 {
+        font-size: 30px;
+    }
+    .case-inside-hero-block p , .case-inside2-hero p {
         font-size: 20px;
         margin-top: 50px;
     }
-    .case-inside-hero img {
+    .case-inside-2-text-container .content p {
+        font-size: 20px;
+    }
+    .case-inside-hero img , .case-inside2-hero img{
         display: block;
+        margin: 30px 0 0 auto;
+    }
+    .case-inside-2-text-container .content span {
+        font-size: 20px;
+    }
+    .case-inside-2-text-container .content  ol li {
+        display: flex;
+        gap: 10px;
+        color: #1E2327;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 54px */
     }
     .section-1-cards {
         justify-content: center;
@@ -156,11 +391,40 @@
         display: inline-block;
         margin: 75px auto 0 0;
     }
+    .case-inside2-hero img {
+        width: 50%;
+        height: 80%;
+    }
 
 }
 @media (max-width:768px)  {
     .section-1-card {
         max-width: 100%;
         width: 100%;
+    }
+    .case-inside-2-text-container .content .image-container {
+        width: 100%;
+        height: 300px;
+    }
+    .case-inside2-hero img {
+        display: none;
+    }
+    .case-inside2-hero{
+        padding: 75px 0 75px;
+    }
+    .case-inside-2-text-container .content  ol , .case-inside-2-text-container .content  ul{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 0;
+    }
+    .case-inside-2-text-container ul li .stage-num {
+        color: #1E2327;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
